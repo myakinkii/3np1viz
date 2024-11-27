@@ -5,12 +5,17 @@ We exclude even numbers (as they are just odds time some powers of 2 ) and also 
 
 # How to run
 
-By default ``npm start`` will print out graph in graphviz format that leads up to 127 (single target)
+By default ``npm start`` will print out graph in graphviz format that leads up to 127 (gonna be huge)
 
 In case you want to customize, run npm i and then put some stuff to your ``.env`` file:
 * ``SEARCH`` - target number to search for
-* ``ALL`` - search for all numbers up to target or just make sure we found direct path to it
+* ``ALL`` - search for all numbers up to target or just make sure we found direct path to it (need to reconsider options names...)
 * ``LIM`` - heuristics not to grow our tree too fast (by default we assume ``500 * SEARCH`` is enough)
+
+## Running without ``ALL=true``
+In this case (which is default) we will include all the nodes that were added to grapgh before we managed to hit the target.
+
+It can be interesting to play with ``LIM`` in this case cuz it can tell if ``SEARCH`` is reachable with numbers above ``LIM`` excluded from graph.
 
 ## To render stuff
 
