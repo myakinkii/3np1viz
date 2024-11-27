@@ -5,11 +5,15 @@
   "main": "lib",
   "scripts": {
     "start": "node graph",
+    "test": "jest",
     "render": "node graph | dot -Tpng -Kdot > output.png"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
