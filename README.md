@@ -22,7 +22,7 @@ In this case we set ``ALL=true``, ``SKIP=true`` and hope that our ``LIM`` heuris
 #### 2 - Check if we can get to target with a given restriction
 In this case we set ``ALL=`` (only empty string is false'y),  ``SKIP=true`` and play with ``LIM``
 
-#### 3 - What do we have in tree by the time we hit target (default stuff)
+#### 3 - What else do we have in our tree by the time we hit target (default stuff)
 Here we set ``ALL=`` to false, ``SKIP=`` as well, and see how ``LIM`` affects size of our tree
 
 ## To render stuff
