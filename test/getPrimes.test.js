@@ -11,7 +11,7 @@ test('some removed vals', () => {
 })
 
 test('primes in a tree up to 17', () => {
-    const result = search(17, true, 100)
+    const result = search(17, true, 100, true)
     const primes = getPrimes(result.map(v => v.val))
     expect(primes).toEqual([1, 3, 5, 7, 11, 13, 17, 23, 53]) // have some extra primes
 })

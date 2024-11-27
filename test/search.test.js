@@ -39,7 +39,7 @@ test('path to 9 where default 500*9 limit is less than max potential number we g
 })
 
 test('simple tree up to 7', () => {
-    const result = search(7, true, 100)
+    const result = search(7, true, 100, true)
     expect(result).toEqual([
         { val: 1, parent: 1 }, { val: 3, parent: 5 }, { val: 5, parent: 1 },
         { val: 7, parent: 11 }, { val: 11, parent: 17 }, { val: 13, parent: 5 }, { val: 17, parent: 13 }
@@ -47,7 +47,7 @@ test('simple tree up to 7', () => {
 })
 
 test('bigger tree up to 17', () => {
-    const result = search(17, true, 100)
+    const result = search(17, true, 100, true)
     expect(result).toEqual([
         { val: 1, parent: 1 }, { val: 3, parent: 5 }, { val: 5, parent: 1 }, { val: 7, parent: 11 },
         { val: 9, parent: 7 }, { val: 11, parent: 17 }, { val: 13, parent: 5 }, { val: 15, parent: 23 }, 

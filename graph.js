@@ -6,14 +6,15 @@ try {
 
 const { search, getPrimes } = require("./lib")
 
-const SEARCH = +process.env.SEARCH || 127 // target number
-const ALL = !!process.env.ALL // search for all numbers below target
-const LIM = +process.env.LIM || 500 * SEARCH // heuristics to optimize search time (and tree size)
+const SEARCH = +process.env.SEARCH || 7 // target number
+const LIM = +process.env.LIM || 500 * SEARCH // max value to be added to graph
+const ALL = !!process.env.ALL // also search for all numbers below target
+const SKIP = !!process.env.SKIP // only return nodes that lead to search targets
 
 try {
     console.log("graph { \n")
 
-    const result = search(SEARCH, ALL, LIM)
+    const result = search(SEARCH, ALL, LIM, SKIP)
 
     getPrimes(result.map(v => v.val)).forEach(p => console.log(`${p} [color=green]`))
     console.log("\n")
