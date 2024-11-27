@@ -8,8 +8,8 @@
     "test": "jest --coverage --coverageDirectory=test/reports",
     "render": "node graph | dot -Tpng -Kdot > output.png"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Alex Myakinkii",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5"
   },
