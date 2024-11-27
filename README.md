@@ -10,7 +10,7 @@ By default ``npm start`` will print out graph in graphviz format that we generat
 In case you want to customize, run npm i and then put some stuff to your ``.env`` file:
 * ``SEARCH`` - target number to search for
 * ``ALL`` - search for all numbers up to target or just make sure we found direct path to it
-* ``LIM`` - heuristics not to grow our tree too fast (by default we assume ``500 * SEARCH`` is enough)
+* ``LIM`` - max value to be added to graph (kinda heuristics not to grow our tree too fast; by default we assume ``500 * SEARCH`` is enough)
 * ``SKIP`` - determines if we render all nodes we have in graph or only those that lead to our targets
 
 ## Kinda modes based on these switches
