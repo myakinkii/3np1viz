@@ -5,7 +5,7 @@
   "main": "lib",
   "scripts": {
     "start": "node graph",
-    "test": "jest",
+    "test": "jest --coverage --coverageDirectory=test/reports",
     "render": "node graph | dot -Tpng -Kdot > output.png"
   },
   "author": "",
