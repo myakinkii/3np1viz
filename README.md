@@ -5,12 +5,25 @@ We exclude even numbers (as they are just odds time some powers of 2 ) and also 
 
 # How to run
 
-By default ``npm start`` will print out graph in graphviz format that leads up to 127 (single target)
+By default ``npm start`` will print out graph in graphviz format that we generated in order to find 7
 
 In case you want to customize, run npm i and then put some stuff to your ``.env`` file:
 * ``SEARCH`` - target number to search for
 * ``ALL`` - search for all numbers up to target or just make sure we found direct path to it
 * ``LIM`` - heuristics not to grow our tree too fast (by default we assume ``500 * SEARCH`` is enough)
+* ``SKIP`` - determines if we render all nodes we have in graph or only those that lead to our targets
+
+## Kinda modes based on these switches
+For now this is what comes to mind regarding the logic this stuff has
+
+#### 1 - Render the tree with all stuff up to SEARCH
+In this case we set ``ALL=true``, ``SKIP=true`` and hope that our ``LIM`` heuristics still lets us build the tree (and adjust it when fails).
+
+#### 2 - Check if we can get to target with a given restriction
+In this case we set ``ALL=`` (only empty string is false'y),  ``SKIP=true`` and play with ``LIM``
+
+#### 3 - What do we have in tree by the time we hit target (default stuff)
+Here we set ``ALL=`` to false, ``SKIP=`` as well, and see how ``LIM`` affects size of our tree
 
 ## To render stuff
 
