@@ -1,0 +1,204 @@
+graph {
+
+# https://edotor.net/
+1 [color=red]
+
+# https://t5k.org/curios/includes/primetest.php
+# https://www.math.uchicago.edu/~luis/allprimes.html
+
+3 [color=green]
+5 [color=green]
+7 [color=green]
+11 [color=green]
+13 [color=green]
+17 [color=green]
+19 [color=green]
+23 [color=green]
+29 [color=green]
+31 [color=green]
+37 [color=green]
+41 [color=green]
+43 [color=green]
+47 [color=green]
+53 [color=green]
+59 [color=green]
+61 [color=green]
+67 [color=green]
+71 [color=green]
+73 [color=green]
+79 [color=green]
+83 [color=green]
+89 [color=green]
+97 [color=green]
+101 [color=green]
+103 [color=green]
+107 [color=green]
+109 [color=green]
+113 [color=green]
+127 [color=green]
+131 [color=green]
+137 [color=green]
+139 [color=green]
+149 [color=green]
+151 [color=green]
+157 [color=green]
+163 [color=green]
+167 [color=green]
+173 [color=green]
+179 [color=green]
+181 [color=green]
+191 [color=green]
+193 [color=green]
+197 [color=green]
+199 [color=green]
+
+233 [color=green]
+251 [color=green]
+263 [color=green]
+269 [color=green]
+283 [color=green]
+
+431 [color=green]
+433 [color=green]
+479 [color=green]
+
+577 [color=green]
+593 [color=green]
+
+647 [color=green]
+
+719 [color=green]
+
+911 [color=green]
+
+971 [color=green]
+
+1093 [color=green]
+1367 [color=green]
+1619 [color=green]
+
+3 -- 5
+5 -- 1
+7 -- 11
+9 -- 7
+11 -- 17
+13 -- 5
+15 -- 23
+17 -- 13
+19 -- 29
+21 -- 1
+23 -- 35
+25 -- 19
+27 -- 41
+29 -- 11
+31 -- 47
+33 -- 25
+35 -- 53
+37 -- 7
+39 -- 59
+41 -- 31
+43 -- 65
+45 -- 17
+47 -- 71
+49 -- 37
+51 -- 77
+53 -- 5
+55 -- 83
+57 -- 43
+59 -- 89
+61 -- 23
+63 -- 95
+65 -- 49
+67 -- 101
+69 -- 13
+71 -- 107
+73 -- 55
+75 -- 113
+77 -- 29
+79 -- 119
+81 -- 61
+83 -- 125
+85 -- 1
+87 -- 131
+89 -- 67
+91 -- 137
+93 -- 35
+95 -- 143
+97 -- 73
+99 -- 149
+
+101 -- 19
+103 -- 155
+105 -- 79
+107 -- 161
+109 -- 41
+111 -- 167
+113 -- 85
+115 -- 173
+117 -- 11
+119 -- 179
+121 -- 91
+123 -- 185
+125 -- 47
+127 -- 191
+
+131 -- 197
+137 -- 103
+139 -- 209
+143 -- 215
+149 -- 7
+155 -- 233
+157 -- 59
+161 -- 121
+167 -- 251
+173 -- 65
+175 -- 263
+179 -- 269
+185 -- 139
+191 -- 287
+197 -- 37
+
+205 -- 77
+209 -- 157
+215 -- 323
+233 -- 175
+251 -- 377
+263 -- 395
+269 -- 101
+283 -- 425
+287 -- 431
+
+319 -- 479
+323 -- 485
+325 -- 61
+377 -- 283
+395 -- 593
+
+425 -- 319
+431 -- 647
+433 -- 325
+445 -- 167
+479 -- 719
+485 -- 91
+
+577 -- 433
+593 -- 445
+
+647 -- 971
+
+719 -- 1079
+
+911 -- 1367
+971 -- 1457
+
+1079 -- 1619
+1093 -- 205
+1367 -- 2051
+1457 -- 1093
+1619 -- 2429
+
+2051 -- 3077
+2429 -- 911
+3077 -- 577
+
+}
