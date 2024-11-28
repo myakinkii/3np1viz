@@ -43,6 +43,7 @@ Here we set ``ALL=`` to false, ``SKIP=`` as well, and see how ``LIM`` affects si
 Make sure you have graphviz installed (e.g. ``brew install graphviz``)
 
 Then run ``npm run render`` and you will (hopefully, see limitations below) have ``output.png`` in your cwd (using default dot engine).
+Default graph will look like this ![sample](/test/sample.png)
 
 Of course, you can follow graphviz docs to adjust layout engine or play with some other stuff yourself (using ``dot`` [cli](https://graphviz.org/doc/info/command.html)).
 
