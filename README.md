@@ -3,6 +3,9 @@ This stuff can build [Collatz graph](https://en.wikipedia.org/wiki/Collatz_conje
 
 We exclude even numbers (as they are just odds time some powers of 2 ) and also mark primes we found on our way.
 
+As for each edge ``3 * child = parent * 2^N - 1``, we also show which ``2^N`` leads from parent to corresponding child.
+The cool thing is every second power gives us new number (this is how we generate our graph).
+
 Initial motivation was to write some algorithm to generate graph from the bottom (just for lulz) instead of doing 3n+1 (which is of course much faster).
 
 Currently we have both modes: ``TRACE`` and ``SEARCH`` as switches

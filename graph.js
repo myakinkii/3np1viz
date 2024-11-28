@@ -22,7 +22,7 @@ try {
     console.log("\n")
     console.error(`getPrimes took ${(Date.now()-now)/1000}s`)
 
-    result.forEach(v => console.log(`${v.val} -- ${v.parent}`))
+    result.forEach(v => console.log(`${v.val} -- ${v.parent} [label="2^${v.pow}"]`))
 
 } catch (e) {
     console.error(e.message) // this goes to stderr to still have properly working pipe
