@@ -3,11 +3,16 @@ This stuff can build [Collatz graph](https://en.wikipedia.org/wiki/Collatz_conje
 
 We exclude even numbers (as they are just odds time some powers of 2 ) and also mark primes we found on our way.
 
+Initial motivation was to write some algorithm to generate graph from the bottom (just for lulz) instead of doing 3n+1 (which is of course much faster).
+
+Currently we have both modes: ``TRACE`` and ``SEARCH`` as switches
+
 # How to run
 
-By default ``npm start`` will print out graph in graphviz format that we generated in order to find 7
+By default ``npm start`` will print out graph in graphviz format that we generated in order to find 7 (in ``SEARCH`` mode)
 
 In case you want to customize, run npm i and then put some stuff to your ``.env`` file:
+* ``TRACE`` - secret parameter to use 3n+1 sequence for target (kinda source in this case) instead of searching for it
 * ``SEARCH`` - target number to search for
 * ``ALL`` - search for all numbers up to target or just make sure we found direct path to it
 * ``LIM`` - max value to be added to graph (kinda heuristics not to grow our tree too fast; by default we assume ``500 * SEARCH`` is enough)
@@ -16,7 +21,12 @@ In case you want to customize, run npm i and then put some stuff to your ``.env`
 ## Kinda modes based on these switches
 For now this is what comes to mind regarding the logic this stuff has
 
-#### 1 - Render the tree with all stuff up to SEARCH
+#### 0 - Trace some big stuff to see the path (fast)
+This can be used when our tree was so big we got OOM. Use ``TRACE`` (which has precedence over ``SEARCH``) and set ``ALL=``
+
+``LIM`` is also supported here though.
+
+#### 1 - Render the tree with all stuff up to SEARCH (or TRACE)
 In this case we set ``ALL=true``, ``SKIP=true`` and hope that our ``LIM`` heuristics still lets us build the tree (and adjust it when fails).
 
 #### 2 - Check if we can get to target with a given restriction
